@@ -14,8 +14,7 @@
 
 ***
 ## Measurement Means
-### All measurement variables (66 in total) are the mean of a measurement for each subject_id and activity. These 
-### are labeled with "AVG()" around the body of the variable name. All variables are floating point. 
+### All measurement variables (66 in total) are the mean of a measurement for each subject_id and activity. These are labeled with "AVG()" around the body of the variable name. All variables are floating point. 
 ***
 * Average Mean of Frequency Body Acceleration along X,Y, and Z
 	+ AVG(fBodyAcc-mean()-X)
