@@ -108,4 +108,3 @@
 * Average Mean and Standard Deviation of Time Gravity Acceleration Mag 
 	+ AVG(tGravityAccMag-mean())
 	+ AVG(tGravityAccMag-std())
-***
