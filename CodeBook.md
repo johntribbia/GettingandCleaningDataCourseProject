@@ -3,7 +3,7 @@
 ## Subject and Activity
 ***
 * Subject: subject_id (integer)
-	+ID of subject measured using wearable technology
+	+ ID of subject measured using wearable technology
 * Activity Name: activity (factor)
 	+ Walking
 	+ Walking Upstairs
@@ -14,7 +14,7 @@
 
 ***
 ## Measurement Means
-### All measurement variables (66 in total) are the MEAN of a measurement for each subject_id and activity. These are labeled with "AVG()" around the body of the variable name. All variables are floating point. 
+### All measurement variables (66 in total) are the MEAN of a measurement for each subject_id and activity name. These are labeled with "AVG()" around the body of the variable name. All variables are floating point. 
 ***
 * Average MEAN of Frequency Body Accelerometer along X,Y, and Z
 	+ AVG(fBodyAccelerometer-MEAN()-X)
