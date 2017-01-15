@@ -14,96 +14,96 @@
 
 ***
 ## Measurement Means
-### All measurement variables (66 in total) are the mean of a measurement for each subject_id and activity. These are labeled with "AVG()" around the body of the variable name. All variables are floating point. 
+### All measurement variables (66 in total) are the MEAN of a measurement for each subject_id and activity. These are labeled with "AVG()" around the body of the variable name. All variables are floating point. 
 ***
-* Average Mean of Frequency Body Acceleration along X,Y, and Z
-	+ AVG(fBodyAcc-mean()-X)
-	+ AVG(fBodyAcc-mean()-Y)
-	+ AVG(fBodyAcc-mean()-Z)
-* Average Standard Deviation of Frequency Body Acceleration along X,Y, and Z
-	+ AVG(fBodyAcc-std()-X)
-	+ AVG(fBodyAcc-std()-Y)
-	+ AVG(fBodyAcc-std()-Z)
-* Average Mean of Frequency Body Acceleration Jerk along X,Y, and Z
-	+ AVG(fBodyAccJerk-mean()-X)
-	+ AVG(fBodyAccJerk-mean()-Y)
-	+ AVG(fBodyAccJerk-mean()-Z)
-* Average Standard Deviation of Frequency Body Acceleration Jerk along X,Y, and Z
-	+ AVG(fBodyAccJerk-std()-X)
-	+ AVG(fBodyAccJerk-std()-Y)
-	+ AVG(fBodyAccJerk-std()-Z)
-* Average Mean and Standard Deviation of Frequency Body Acceleration Mag
-	+ AVG(fBodyAccMag-mean())
-	+ AVG(fBodyAccMag-std())
-* Average Mean and Standard Deviation of Frequency Body Acceleration Jerk Mag
-	+ AVG(fBodyAccJerkMag-mean())
-	+ AVG(fBodyAccJerkMag-std())
-* Average Mean and Standard Deviation of Frequency Body Gyro Jerk Mag
-	+ AVG(fBodyGyroJerkMag-mean())
-	+ AVG(fBodyGyroJerkMag-std())
-* Average Mean and Standard Deviation of Frequency Body Gyro Mag
-	+ AVG(fBodyGyroMag-mean())
-	+ AVG(fBodyGyroMag-std())
-* Average Mean of Frequency Body Gyro along X,Y, and Z 
-	+ AVG(fBodyGyro-mean()-X)
-	+ AVG(fBodyGyro-mean()-Y)
-	+ AVG(fBodyGyro-mean()-Z)
+* Average MEAN of Frequency Body Accelerometer along X,Y, and Z
+	+ AVG(fBodyAccelerometer-MEAN()-X)
+	+ AVG(fBodyAccelerometer-MEAN()-Y)
+	+ AVG(fBodyAccelerometer-MEAN()-Z)
+* Average Standard Deviation of Frequency Body Accelerometer along X,Y, and Z
+	+ AVG(fBodyAccelerometer-SD()-X)
+	+ AVG(fBodyAccelerometer-SD()-Y)
+	+ AVG(fBodyAccelerometer-SD()-Z)
+* Average MEAN of Frequency Body Accelerometer Jerk along X,Y, and Z
+	+ AVG(fBodyAccelerometerJerk-MEAN()-X)
+	+ AVG(fBodyAccelerometerJerk-MEAN()-Y)
+	+ AVG(fBodyAccelerometerJerk-MEAN()-Z)
+* Average Standard Deviation of Frequency Body Accelerometer Jerk along X,Y, and Z
+	+ AVG(fBodyAccelerometerJerk-SD()-X)
+	+ AVG(fBodyAccelerometerJerk-SD()-Y)
+	+ AVG(fBodyAccelerometerJerk-SD()-Z)
+* Average MEAN and Standard Deviation of Frequency Body Accelerometer Magnitude
+	+ AVG(fBodyAccelerometerMagnitude-MEAN())
+	+ AVG(fBodyAccelerometerMagnitude-SD())
+* Average MEAN and Standard Deviation of Frequency Body Accelerometer Jerk Magnitude
+	+ AVG(fBodyAccelerometerJerkMagnitude-MEAN())
+	+ AVG(fBodyAccelerometerJerkMagnitude-SD())
+* Average MEAN and Standard Deviation of Frequency Body Gyroscope Jerk Magnitude
+	+ AVG(fBodyGyroscopeJerkMagnitude-MEAN())
+	+ AVG(fBodyGyroscopeJerkMagnitude-SD())
+* Average MEAN and Standard Deviation of Frequency Body Gyroscope Magnitude
+	+ AVG(fBodyGyroscopeMagnitude-MEAN())
+	+ AVG(fBodyGyroscopeMagnitude-SD())
+* Average MEAN of Frequency Body Gyroscope along X,Y, and Z 
+	+ AVG(fBodyGyroscope-MEAN()-X)
+	+ AVG(fBodyGyroscope-MEAN()-Y)
+	+ AVG(fBodyGyroscope-MEAN()-Z)
 * Average Standard Deviation of Frequency Body Gryo along X,Y, and Z
-	+ AVG(fBodyGyro-std()-X)
-	+ AVG(fBodyGyro-std()-Y)
-	+ AVG(fBodyGyro-std()-Z)
-* Average Mean of Time Body Acceleration along X,Y, and Z
-	+ AVG(tBodyAcc-mean()-X)
-	+ AVG(tBodyAcc-mean()-Y)
-	+ AVG(tBodyAcc-mean()-Z)
-* Average Standard Deviation of Time Body Acceleration along X,Y, and Z
-	+ AVG(tBodyAcc-std()-X)
-	+ AVG(tBodyAcc-std()-Y)
-	+ AVG(tBodyAcc-std()-Z)
-* Average Mean of Time Body Acceleration Jerk along X,Y, and Z
-	+ AVG(tBodyAccJerk-mean()-X)
-	+ AVG(tBodyAccJerk-mean()-Y)
-	+ AVG(tBodyAccJerk-mean()-Z)
-* Average Standard Deviation of Time Body Acceleration Jerk along X,Y, and Z
-	+ AVG(tBodyAccJerk-std()-X)
-	+ AVG(tBodyAccJerk-std()-Y)
-	+ AVG(tBodyAccJerk-std()-Z)
-* Average Mean and Standard Deviation of Time Body Acceleration Jerk Mag
-	+ AVG(tBodyAccJerkMag-mean())
-	+ AVG(tBodyAccJerkMag-std())
-* Average Mean and Standard Deviation of Time Body Acceleration Mag
-	+ AVG(tBodyAccMag-mean())
-	+ AVG(tBodyAccMag-std())
-* Average Mean of Time Body Gyro along X,Y, and Z 
-	+ AVG(tBodyGyro-mean()-X)
-	+ AVG(tBodyGyro-mean()-Y)
-	+ AVG(tBodyGyro-mean()-Z)
-* Average Standard Deviation of Time Body Gyro along X,Y, and Z
-	+ AVG(tBodyGyro-std()-X)
-	+ AVG(tBodyGyro-std()-Y)
-	+ AVG(tBodyGyro-std()-Z)
-* Average Mean of Time Body Gyro Jerk along X,Y, and Z
-	+ AVG(tBodyGyroJerk-mean()-X)
-	+ AVG(tBodyGyroJerk-mean()-Y)
-	+ AVG(tBodyGyroJerk-mean()-Z)
-* Average Standard Deviation of Time Body Gyro Jerk along X,Y, and Z 
-	+ AVG(tBodyGyroJerk-std()-X)
-	+ AVG(tBodyGyroJerk-std()-Y)
-	+ AVG(tBodyGyroJerk-std()-Z)
-* Average Mean and Standard Deviation of Time Body Jerk Mag
-	+ AVG(tBodyGyroJerkMag-mean())
-	+ AVG(tBodyGyroJerkMag-std())
-* Average Mean and Standard Deviation of Time Body Gyro Mag
-	+ AVG(tBodyGyroMag-mean())
-    + AVG(tBodyGyroMag-std())
-* Average Mean of Time Gravity Acceleration along X,Y, and Z
-	+ AVG(tGravityAcc-mean()-X)
-	+ AVG(tGravityAcc-mean()-Y)
-	+ AVG(tGravityAcc-mean()-Z)
-* Average Standard Deviation of Time Gravity Acceleration along X,Y, and Z
-	+ AVG(tGravityAcc-std()-X)
-	+ AVG(tGravityAcc-std()-Y)
-	+ AVG(tGravityAcc-std()-Z)
-* Average Mean and Standard Deviation of Time Gravity Acceleration Mag 
-	+ AVG(tGravityAccMag-mean())
-	+ AVG(tGravityAccMag-std())
+	+ AVG(fBodyGyroscope-SD()-X)
+	+ AVG(fBodyGyroscope-SD()-Y)
+	+ AVG(fBodyGyroscope-SD()-Z)
+* Average MEAN of Time Body Accelerometer along X,Y, and Z
+	+ AVG(tBodyAccelerometer-MEAN()-X)
+	+ AVG(tBodyAccelerometer-MEAN()-Y)
+	+ AVG(tBodyAccelerometer-MEAN()-Z)
+* Average Standard Deviation of Time Body Accelerometer along X,Y, and Z
+	+ AVG(tBodyAccelerometer-SD()-X)
+	+ AVG(tBodyAccelerometer-SD()-Y)
+	+ AVG(tBodyAccelerometer-SD()-Z)
+* Average MEAN of Time Body Accelerometer Jerk along X,Y, and Z
+	+ AVG(tBodyAccelerometerJerk-MEAN()-X)
+	+ AVG(tBodyAccelerometerJerk-MEAN()-Y)
+	+ AVG(tBodyAccelerometerJerk-MEAN()-Z)
+* Average Standard Deviation of Time Body Accelerometer Jerk along X,Y, and Z
+	+ AVG(tBodyAccelerometerJerk-SD()-X)
+	+ AVG(tBodyAccelerometerJerk-SD()-Y)
+	+ AVG(tBodyAccelerometerJerk-SD()-Z)
+* Average MEAN and Standard Deviation of Time Body Accelerometer Jerk Magnitude
+	+ AVG(tBodyAccelerometerJerkMagnitude-MEAN())
+	+ AVG(tBodyAccelerometerJerkMagnitude-SD())
+* Average MEAN and Standard Deviation of Time Body Accelerometer Magnitude
+	+ AVG(tBodyAccelerometerMagnitude-MEAN())
+	+ AVG(tBodyAccelerometerMagnitude-SD())
+* Average MEAN of Time Body Gyroscope along X,Y, and Z 
+	+ AVG(tBodyGyroscope-MEAN()-X)
+	+ AVG(tBodyGyroscope-MEAN()-Y)
+	+ AVG(tBodyGyroscope-MEAN()-Z)
+* Average Standard Deviation of Time Body Gyroscope along X,Y, and Z
+	+ AVG(tBodyGyroscope-SD()-X)
+	+ AVG(tBodyGyroscope-SD()-Y)
+	+ AVG(tBodyGyroscope-SD()-Z)
+* Average MEAN of Time Body Gyroscope Jerk along X,Y, and Z
+	+ AVG(tBodyGyroscopeJerk-MEAN()-X)
+	+ AVG(tBodyGyroscopeJerk-MEAN()-Y)
+	+ AVG(tBodyGyroscopeJerk-MEAN()-Z)
+* Average Standard Deviation of Time Body Gyroscope Jerk along X,Y, and Z 
+	+ AVG(tBodyGyroscopeJerk-SD()-X)
+	+ AVG(tBodyGyroscopeJerk-SD()-Y)
+	+ AVG(tBodyGyroscopeJerk-SD()-Z)
+* Average MEAN and Standard Deviation of Time Body Jerk Magnitude
+	+ AVG(tBodyGyroscopeJerkMagnitude-MEAN())
+	+ AVG(tBodyGyroscopeJerkMagnitude-SD())
+* Average MEAN and Standard Deviation of Time Body Gyroscope Magnitude
+	+ AVG(tBodyGyroscopeMagnitude-MEAN())
+    + AVG(tBodyGyroscopeMagnitude-SD())
+* Average MEAN of Time Gravity Accelerometer along X,Y, and Z
+	+ AVG(tGravityAccelerometer-MEAN()-X)
+	+ AVG(tGravityAccelerometer-MEAN()-Y)
+	+ AVG(tGravityAccelerometer-MEAN()-Z)
+* Average Standard Deviation of Time Gravity Accelerometer along X,Y, and Z
+	+ AVG(tGravityAccelerometer-SD()-X)
+	+ AVG(tGravityAccelerometer-SD()-Y)
+	+ AVG(tGravityAccelerometer-SD()-Z)
+* Average MEAN and Standard Deviation of Time Gravity Accelerometer Magnitude 
+	+ AVG(tGravityAccelerometerMagnitude-MEAN())
+	+ AVG(tGravityAccelerometerMagnitude-SD())

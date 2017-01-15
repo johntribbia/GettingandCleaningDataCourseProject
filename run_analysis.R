@@ -1,10 +1,19 @@
-library(data.table)
+# This R script accomplishes the following four objectives:
+# 1. Merges the training and the test sets to create one data set.
+# 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+# 3. Uses descriptive activity names to name the activities in the data set
+# 4. Appropriately labels the data set with descriptive variable names.
+# 5. From the data set in step 4, creates a second, independent tidy data set with the average of 
+#    each variable for each activity and each subject.
+
+## Load packates
 library(dplyr)
 library(tidyr)
-library(lubridate)
-wd <- "/Users/user.name/FILEPATH/"
+
+## Set working directory
+wd <- "/Users/user.name/FILEPATH"
 setwd(wd)
-## Unzip and Extract data from files
+## Unzip and Extract data from url
 temp <- tempfile()
 filename <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(filename, temp, mode = "wb")
@@ -15,8 +24,6 @@ activity_labels <- tbl_df(read.table("./UCI HAR Dataset/activity_labels.txt"))
 colnames(activity_labels) <- c("activity_id","activity")
 features <- (read.table("./UCI HAR Dataset/features.txt"))
 colnames(features) <- c("col_index","feature")
-#small clean up of feature names
-features$feature <- gsub("BodyBody","Body",features$feature)
 # subset features to only include mean and standard deviation for each measurement
 features_subset <- features[which(!grepl("meanFreq",features$feature) & grepl("mean|std",features$feature)),] 
 
@@ -71,7 +78,7 @@ gather_df <- merge_df %>%
 
 colnames(gather_df) <- c("subject_id","activity_id","activity","feature","feature_value")
 
-## create independent tidy data set with the average of each variable for each activity and each subject
+## create independent tidy data set with the average of each variable for each activity name and each subject
 # long data with means
 tidy_df_stage <- gather_df %>%
   group_by(subject_id, activity, feature) %>%
@@ -85,7 +92,14 @@ tidy_df <- tidy_df_stage %>%
 tidy_id_labels <- c("subject_id","activity")
 tidy_value_labels <- paste0("AVG(",setdiff(colnames(tidy_df), tidy_id_labels),")")
 tidy_colnames <- combine(tidy_id_labels,tidy_value_labels)
+tidy_colnames <- gsub("std()", "SD", tidy_colnames)
+tidy_colnames <- gsub("mean()", "MEAN", tidy_colnames)
+tidy_colnames <- gsub("Acc", "Accelerometer", tidy_colnames)
+tidy_colnames <- gsub("Gyro", "Gyroscope", tidy_colnames)
+tidy_colnames <- gsub("Mag", "Magnitude", tidy_colnames)
+tidy_colnames <- gsub("BodyBody", "Body", tidy_colnames)
 colnames(tidy_df) <- tidy_colnames
+
 
 ## write tidy_means.txt
 write.table(tidy_df, "tidy_means.txt", row.names = FALSE)
